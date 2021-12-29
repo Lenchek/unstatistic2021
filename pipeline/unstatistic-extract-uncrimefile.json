@@ -928,6 +928,20 @@
 				}
 			}
 		],
+		"parameters": {
+			"Container": {
+				"type": "string",
+				"defaultValue": "unstatistic-sourcefiles"
+			},
+			"Path": {
+				"type": "string",
+				"defaultValue": "CrimeStat.Source.UNCrime"
+			},
+			"FileName ": {
+				"type": "string",
+				"defaultValue": "burglary.csv"
+			}
+		},
 		"variables": {
 			"PipelineExecutionStatus": {
 				"type": "String",
