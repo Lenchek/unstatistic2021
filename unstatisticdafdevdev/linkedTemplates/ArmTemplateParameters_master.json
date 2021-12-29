@@ -11,6 +11,9 @@
 		"unstatisticsqlaapdevlinkedservice_connectionString": {
 			"value": ""
 		},
+		"unstatisticstac_connectionString": {
+			"value": ""
+		},
 		"containerUri": {
 			"value": ""
 		},
