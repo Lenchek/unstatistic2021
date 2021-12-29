@@ -798,12 +798,26 @@
 				"inputs": [
 					{
 						"referenceName": "src_csv_uncrime",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Container": {
+								"value": "@pipeline().parameters.Container",
+								"type": "Expression"
+							},
+							"Path": {
+								"value": "@pipeline().parameters.Path",
+								"type": "Expression"
+							},
+							"FileName": {
+								"value": "@pipeline().parameters.FileName",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "dst_sql_population_untyped",
+						"referenceName": "dst_sql_uncrime_untyped",
 						"type": "DatasetReference"
 					}
 				]
@@ -937,7 +951,7 @@
 				"type": "string",
 				"defaultValue": "CrimeStat.Source.UNCrime"
 			},
-			"FileName ": {
+			"FileName": {
 				"type": "string",
 				"defaultValue": "burglary.csv"
 			}
